@@ -1,3 +1,6 @@
+const useEffect = require("react");
+const  useState = require("react");
+const Axios = require("axios");
 const express = require("express");
 const app = express();
 const mysql = require("mysql");
@@ -16,7 +19,7 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/api/lost_livestock", (req, res) => {
-  const sqlSelect = "SELECT * FROM lost_livestock WHERE status='missing'";
+  const sqlSelect = "SELECT * FROM lost_livestock WHERE status!='missing'";
 
   db.query(sqlSelect, (err, result) => {
       res.send(result);
@@ -24,7 +27,7 @@ app.get("/api/lost_livestock", (req, res) => {
   });
 });
 
-app.post("/api/report", (req, res) => {
+app.post("/api/report/missing", (req, res) => {
   const age = req.body.age;
   const colour = req.body.colour;
   const kind = req.body.kind;
@@ -33,7 +36,9 @@ app.post("/api/report", (req, res) => {
   const size = req.body.size;
 
   const sqlInsert =
-    "INSERT INTO lost_livestock (age,colour,kind,brand,breed,weight) VALUES (?,?,?,?,?,?);";
+    "INSERT INTO lost_livestock " +
+      "(age,colour,kind,brand,breed,weight) " +
+      "VALUES (?,?,?,?,?,?);";
   db.query(
     sqlInsert,
     [age, colour, kind, brand, breed, size],
@@ -41,6 +46,48 @@ app.post("/api/report", (req, res) => {
       console.log(err);
     }
   );
+});
+
+app.post("/api/report/found/brand",
+    (req,res)=>{
+  const brand = req.body.brand;
+  const colour = req.body.colour;
+  const kind = req.body.kind;
+  const breed = req.body.breed;
+
+  const sqlUpdate="UPDATE lost_livestock SET status " +
+      "= ? WHERE brand==? colour==? kind==? breed==?";
+
+  db.query(sqlUpdate,["found",brand, colour, kind, breed],(err, results)=>{
+    console.log(results);
+  });
+})
+
+app.post("/api/report/found/not_in_db",
+    (req, res) => {
+
+  const colour = req.body.colour;
+  const kind = req.body.kind;
+  const brand = req.body.brand;
+  const breed = req.body.breed;
+  const status= req.body.status;
+  const age= 'unknown';
+  const weight= 0;
+
+    const sqlInsert =
+        "INSERT INTO lost_livestock " +
+        "(age,colour,kind,brand,breed,weight,status) " +
+        "VALUES ('"+age+"',?,?,?,?,'"+weight+"',?);";
+    db.query(
+        sqlInsert,
+        [ colour, kind, brand, breed, status],
+        (err, result) => {
+          console.log(err);
+          console.log(result);
+        }
+    );
+
+
 });
 
 app.post("/api/register", (req, res) => {
