@@ -18,11 +18,29 @@ app.use(cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get("/api/lost_livestock", (req, res) => {
+app.get("/api/found_livestock", (req, res) => {
   const sqlSelect = "SELECT * FROM lost_livestock WHERE status!='missing'";
 
   db.query(sqlSelect, (err, result) => {
       res.send(result);
+    console.log(err);
+  });
+});
+
+app.get("/api/get_all_lost_livestock", (req, res) => {
+    const sqlSelect = "SELECT * FROM lost_livestock WHERE status='missing'";
+
+    db.query(sqlSelect, (err, result) => {
+        res.send(result);
+        console.log(err);
+    });
+});
+
+app.get("/api/get_all_livestock", (req, res) => {
+  const sqlSelect = "SELECT * FROM lost_livestock";
+
+  db.query(sqlSelect, (err, result) => {
+    res.send(result);
     console.log(err);
   });
 });

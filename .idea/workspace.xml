@@ -2,21 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63e79ba2-612d-4cf1-8210-b4367c9dc8ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/kebonematimela.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/FoundDialog/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/SearchDialog/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/FoundReport/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/GenReport/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/MissingReport/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/ReportAnimalZone/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Static/images/cards/three.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/App/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/App/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Dashboard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Dashboard/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Report/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/FoundDialog/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/FoundBranded/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/HomePage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/HomePage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/ReportBuffer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ReportBuffer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/ReportFound/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ReportFound/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/ReportMissing/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ReportMissing/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Search/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/SearchDialog/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/listItems/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/listItems/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +72,10 @@
       <workItem from="1609429229500" duration="7975000" />
       <workItem from="1609511754240" duration="4535000" />
       <workItem from="1609600314389" duration="3692000" />
-      <workItem from="1609678323409" duration="595000" />
+      <workItem from="1609678323409" duration="6264000" />
+      <workItem from="1609759170405" duration="8727000" />
+      <workItem from="1609843700149" duration="20663000" />
+      <workItem from="1609957459222" duration="3172000" />
     </task>
     <servers />
   </component>
