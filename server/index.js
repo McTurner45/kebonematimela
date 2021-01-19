@@ -1,48 +1,37 @@
-const useEffect = require("react");
-const useState = require("react");
-const Axios = require("axios");
 const express = require("express");
-const bcrypt = require("bcrypt");
 const mysql = require("mysql");
 const bodyParser = require("body-parser");
-const session = require("express-session");
-const cookieParser = require("cookie-parser");
-const cors = require('cors')
+const cors = require('cors');
 
-
-const saltRounds = 10;
 
 const db = mysql.createPool({
-    host: "localhost",
-    user: "root",
-    password: "root",
-    database: "kebonematimela",
+    host: "eu-cdbr-west-03.cleardb.net",
+    user: "b0c05b9a8213c1",
+    password: "074e2c7b",
+    database: "heroku_46d8155810b5c82",
 });
+
 
 const app = express();
 app.use(express.json());
 
-app.use(cors({
-    origin: ["http://localhost:3000/"],
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
-    method: ["GET", "POST"],
-    credential: true,
-}));
-app.use(cookieParser());
-app.use(bodyParser.urlencoded({extended: true}));
+var corsOptions = {
+    origin: 'http://localhost:3000',
+    optionsSuccessStatus: 200,
+    // For legacy browser support
+    methods: "GET, POST",
+    credentials: true,
+}
 
+app.use(cors(corsOptions));
 
-app.use(session({
-    key: "userId",
-    secret: "matimela_a_botswana",
-    resave: false,
-    saveUninitialized: false,
-    cookie: {
-        expires: 60 * 60 * 24,
-    },
-}))
+app.use(function(req, res, next) {
+    res.header('Access-Control-Allow-Origin', req.header('origin') );
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
 
+//getting data from the database
 app.get("/api/found_livestock", (req, res) => {
     const sqlSelect = "SELECT * FROM lost_livestock WHERE status!='missing'";
 
@@ -70,6 +59,7 @@ app.get("/api/get_all_livestock", (req, res) => {
     });
 });
 
+//sending data to the database
 app.post("/api/report/missing", (req, res) => {
     const age = req.body.age;
     const colour = req.body.colour;
@@ -150,24 +140,10 @@ app.post("/api/register", (req, res) => {
         sqlInsert,
         [fullname, email, mark, password, city, phone, id_number],
         (err, result) => {
-            req.session.user = result
             console.log(err);
         }
     );
 });
-
-app.get("/api/login", ((req, res) => {
-    if (req.session.user) {
-        res.send({loggedIn: true, user: req.session.user});
-    } else {
-        res.send({loggedIn: false});
-
-    }
-}))
-
-app.get("/api/logout", ((req, res) => {
-    res.send({loggedIn: false})
-}))
 
 app.post("/api/login", (req, res) => {
     const email = req.body.email;
@@ -183,7 +159,6 @@ app.post("/api/login", (req, res) => {
                 res.send({err: err})
             }
             if (result.length > 0) {
-                req.session.user = result
                 res.send(result)
             } else {
                 res.send({message: "wrong email/password combination"})
@@ -220,9 +195,10 @@ app.post("/api/login", (req, res) => {
         "  `zone` VARCHAR(45) NULL,\n" +
         "  `status` VARCHAR(45) NULL,\n" +
         "  PRIMARY KEY (`idlost_livestock`));\n"
-
-
 }
 
-app.listen(3002, () => {
+let PORT=3002;
+
+app.listen(process.env.PORT || PORT, () => {
+    console.log(`Server running on port ${PORT}`);
 });

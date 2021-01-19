@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63e79ba2-612d-4cf1-8210-b4367c9dc8ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Static/images/cards/four.png" afterDir="false" />
+    <list default="true" id="73e38688-0b14-4333-84b0-2eb015d1120e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/App/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/App/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Dashboard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Dashboard/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/FoundBranded/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/GenReport/FoundBranded/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/FoundReport/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/GenReport/FoundReport/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/GenReport/FoundBranded/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/GenReport/FoundBranded/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/GenReport/FoundReport/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/GenReport/FoundReport/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/GenReport/MissingReport/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/GenReport/MissingReport/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/GenReport/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/GenReport/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/HomePage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/HomePage/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/MissingReport/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/GenReport/MissingReport/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Register/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Register/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/ReportAnimalZone/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/GenReport/ReportAnimalZone/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/ReportBuffer/ReportFound/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ReportBuffer/ReportFound/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/ReportBuffer/ReportMissing/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ReportBuffer/ReportMissing/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/ReportBuffer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ReportBuffer/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/ReportFound/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ReportBuffer/ReportFound/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/ReportMissing/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ReportBuffer/ReportMissing/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,72 +36,33 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/client" />
   </component>
-  <component name="ProjectId" id="1mQcDhwcSWcQ6ftIZjDguz5f3gF" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1nIWuV9E52pZOVyQ7fAmjV8IOHA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\mctur\Documents\Projects\kebonematimela\client\src\components\ReportBuffer" />
-      <recent name="C:\Users\mctur\Documents\Projects\kebonematimela\client\src\components\GenReport" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="Unnamed" type="NodeJSConfigurationType" nameIsGenerated="true" working-dir="$PROJECT_DIR$/client">
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="63e79ba2-612d-4cf1-8210-b4367c9dc8ac" name="Default Changelist" comment="" />
-      <created>1609429173256</created>
+      <changelist id="73e38688-0b14-4333-84b0-2eb015d1120e" name="Default Changelist" comment="" />
+      <created>1611078320131</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1609429173256</updated>
-      <workItem from="1609429229500" duration="7975000" />
-      <workItem from="1609511754240" duration="4535000" />
-      <workItem from="1609600314389" duration="3692000" />
-      <workItem from="1609678323409" duration="6264000" />
-      <workItem from="1609759170405" duration="8727000" />
-      <workItem from="1609843700149" duration="20663000" />
-      <workItem from="1609957459222" duration="5948000" />
-      <workItem from="1609964259277" duration="2906000" />
-      <workItem from="1610015340971" duration="13571000" />
-      <workItem from="1610639902661" duration="4394000" />
-      <workItem from="1610883109096" duration="10000" />
+      <updated>1611078320131</updated>
+      <workItem from="1611078326754" duration="2402000" />
+      <workItem from="1611080865629" duration="6072000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
