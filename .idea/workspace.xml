@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73e38688-0b14-4333-84b0-2eb015d1120e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client" beforeDir="false" afterPath="$PROJECT_DIR$/client" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Dashboard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Dashboard/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/GenReport/FoundBranded/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/GenReport/FoundBranded/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/GenReport/FoundReport/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/GenReport/FoundReport/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/GenReport/MissingReport/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/GenReport/MissingReport/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/GenReport/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/GenReport/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Register/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Register/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/ReportBuffer/ReportFound/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ReportBuffer/ReportFound/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/ReportBuffer/ReportMissing/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ReportBuffer/ReportMissing/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/ReportBuffer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ReportBuffer/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +44,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611078320131</updated>
       <workItem from="1611078326754" duration="2402000" />
-      <workItem from="1611080865629" duration="6072000" />
+      <workItem from="1611080865629" duration="7422000" />
     </task>
     <servers />
   </component>
